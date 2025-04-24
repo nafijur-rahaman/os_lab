@@ -1,0 +1,34 @@
+array=("nafi" "kafi" "hafi")
+echo "The array: ${array[@]}"
+echo "Enter index 0 to  $((${#array[@]} -1)) "
+read index
+echo "The  array element: ${array[index]} "
+echo "Enter the new value to append"
+read value
+array+=("$value")
+echo "The new array: ${array[@]} "
+
+
+
+
+if else
+
+
+echo "enter a number"
+read num
+
+if [ "$num" -gt 0 ]; then
+echo "The number is positive"
+
+
+        if [ $(($num % 2)) -eq 0 ]; then
+        echo "the number is even"
+        else
+        echo "the number is odd"
+
+        fi
+
+else
+echo "The number is negative"
+
+fi
